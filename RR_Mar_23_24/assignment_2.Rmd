@@ -1,0 +1,31 @@
+---
+title: "Untitled"
+author: "Konrad Lewszyk, Adam Dudek"
+date: "3/31/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## The Suits
+
+![](the_suits.jpg)
+
+The Suits tells a story of a happy lawyer called ***Harvey Specter*** and he meets a new happy friend ***Mike*** and he helps him to become a lawyer too. Now ***Harvey and Mike*** can be happy friends and happy lawyers as well.
+
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
