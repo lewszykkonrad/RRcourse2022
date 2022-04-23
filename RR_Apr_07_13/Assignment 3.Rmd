@@ -3,11 +3,16 @@ title: "Exercise 2"
 author: "Wojciech Hardy; Łukasz Nawaro"
 date: "3/29/2022"
 output: html_document
+params:
+  file: "../Data/season_2.RData"
+  
+   
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
-load("../Data/season_1.RData")
+#load("../Data/season_1.RData")
+load(params$file)
 ```
 
 # Game of Thrones - Season 1 summary in numbers
@@ -50,3 +55,10 @@ Finally, the episodes with the above-average viewership were:
 | 8             | "The Pointy End" | Daniel Minahan      |
 | 9             | "Baelor" | Alan Taylor      |
 | 10            | "Fire and Blood" | Alan Taylor      |
+
+```{r}
+for (season in params$seasons){
+  rmarkdown::render(params$file, params = list(season = season))
+}
+```
+
